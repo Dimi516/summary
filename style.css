@@ -1,3 +1,6 @@
+/*1. **Media Query για `whole`**: Όταν η οθόνη είναι μικρότερη από 600px, η διάταξη του `.whole` αλλάζει για να προσαρμόζεται σε μία στήλη αντί για δύο.
+2. **Media Query για `bluescreen`**: Όταν η οθόνη είναι μικρότερη από 600px, το `bluescreen` καταλαμβάνει όλο το πλάτος και αφαιρούνται τα περιθώρια.
+*/
 * {
   box-sizing: border-box;
 }
@@ -29,13 +32,15 @@ body {
 .allitem {
   background-color: rgba(236, 242, 255, 1);
   width: 100%;
+  margin-top: 100px;
 }
 
 .whole {
   display: grid;
-  grid-template-columns: 300px 330px;
+  grid-template-columns: 300px 320px;
   grid-template-rows: 450px;
   justify-content: center;
+  width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -57,12 +62,12 @@ body {
     hsl(252, 100%, 67%),
     hsl(241, 81%, 54%)
   );
-  border-radius: 20px;
+
+  border-radius: 20px 0px 0px 20px;
   color: var(--light-levander--);
   text-align: center;
   z-index: 1;
-  position: sticky;
-  width: 315px;
+  width: 100%;
 }
 
 .result {
@@ -208,10 +213,9 @@ img {
 }
 
 .attribution {
-  font-size: 11px;
-  position: sticky;
-  margin-left: 52%;
-  padding-top: 3px;
+  font-size: 10px;
+  margin-top: 40px;
+  margin-left: 5px;
 }
 
 .attribution a {
