@@ -47,11 +47,13 @@ body {
   .whole {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+   border-radius: 0px;
   }
   .bluescreen {
     width: 100%;
     border-radius: 0;
     margin-bottom: 20px;
+    margin:auto;
   }
 }
 
