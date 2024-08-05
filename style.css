@@ -1,0 +1,212 @@
+/*## Colors
+
+### Primary
+
+- Light red: hsl(0, 100%, 67%)
+- Orangey yellow: hsl(39, 100%, 56%)
+- Green teal: hsl(166, 100%, 37%)
+- Cobalt blue: hsl(234, 85%, 45%)
+
+## Gradients
+
+- Light slate blue (background): hsl(252, 100%, 67%)
+- Light royal blue (background): hsl(241, 81%, 54%)
+
+- Violet blue (circle): hsla(256, 72%, 46%, 1)
+- Persian blue (circle): hsla(241, 72%, 46%, 0)
+
+
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Pale blue: hsl(221, 100%, 96%)
+- Light lavender: hsl(241, 100%, 89%)
+- Dark gray blue: hsl(224, 30%, 27%)*/
+* {
+  box-sizing: border-box;
+}
+:root {
+  --font-hanken--: "hanken grotesk";
+  --lightslate-blue-backgr-: hsl(252, 100%, 67%);
+  --lightroyal-blue-backgr: hsl(241, 81%, 54%);
+  --violet-blue-circle-: hsla(256, 72%, 46%, 1);
+  --persian-blue-circle: hsla(241, 72%, 46%, 0);
+  --white--: hsl(0, 0%, 100%);
+  --paleblue--: hsl(221, 100%, 96%);
+  --light-levander--: hsl(241, 100%, 89%);
+  --dark-grey-blue--: hsl(224, 30%, 27%);
+  --lightred-li-: hsl(0, 100%, 67%, 0.2);
+  --oranyellow-ll-: hsl(39, 100%, 56%, 0.2);
+  --greenteal-li-: hsl(166, 100%, 37%, 0.2);
+  --cobaltblue-li-: hsl(234, 85%, 45%, 0.2);
+}
+
+body {
+  font-family: var(--font-hanken--);
+  background-color: var(--paleblue--);
+}
+
+.allitem {
+  background-color: rgba(236, 242, 255, 1);
+  width: 100%;
+}
+@media only screen and (max-width: 600px) {
+  .allitem {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: fit-content;
+  }
+}
+.whole {
+  display: grid;
+  grid-template-columns: 300px 330px;
+  grid-template-rows: 450px;
+  justify-content: center;
+}
+.bluescreen {
+  background-color: var(--lightroyal-blue-backgr);
+  background-image: linear-gradient(
+    180deg,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  border-radius: 20px;
+  color: var(--light-levander--);
+  text-align: center;
+  z-index: 1;
+  position: sticky;
+  width: 315px;
+}
+.result {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--paleblue--);
+  opacity: 0.7;
+}
+.answer {
+  border-radius: 50%;
+  background-color: hsla(256, 72%, 46%, 1);
+  width: 150px;
+  height: 150px;
+  display: flex;
+  margin: auto;
+  margin-top: 30px;
+}
+.resultsnum {
+  margin: auto;
+  padding: 0px;
+}
+.biglet {
+  position: relative;
+  font-size: 60px;
+  font-weight: 400;
+  color: var(--light-levander--);
+}
+.lowlet {
+  opacity: 0.5;
+}
+.great {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+  font-weight: 700;
+  font-size: 30px;
+}
+.performance {
+  width: 260px;
+  text-align: center;
+  margin: auto;
+  font-size: 18px;
+  padding-top: 10px;
+}
+.numbers1 {
+  background-color: var(--white--);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+ul {
+  list-style: none;
+}
+h3 {
+  position: relative;
+  margin-left: 65px;
+}
+img {
+  position: relative;
+  margin-right: 5px;
+}
+.summary {
+  border: 1px solid none;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 20px;
+  width: 200px;
+  height: 50px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reaction {
+  background-color: var(--lightred-li-);
+}
+.memory {
+  background-color: var(--oranyellow-ll-);
+}
+.verbal {
+  background-color: var(--greenteal-li-);
+}
+.visual {
+  background-color: var(--cobaltblue-li-);
+}
+.numbers {
+  padding-left: 50px;
+  font-weight: 900;
+}
+
+.contin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 65px;
+  background-color: var(--dark-grey-blue--);
+  border-radius: 20px;
+  width: 190px;
+  height: 50px;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+}
+.lowopa {
+  opacity: 0.4;
+}
+.red {
+  color: red;
+}
+.yellow {
+  color: #ffb21e;
+}
+.green {
+  color: green;
+}
+.blue {
+  color: blue;
+}
+.attribution {
+  font-size: 11px;
+  position: sticky;
+  margin-left: 52%;
+  padding-top: 3px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
